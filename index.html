@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Online Store</title>
+	<meta name="author" content="Daniel Ivanov">
+	<meta name="description" content="Oneline store template">
+	<meta name="keywords" content="keywords,here">
+	<link rel="shortcut icon" href="images/logo/logo.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+	
+	<!--<script src="https://www.paypalobjects.com/api/checkout.js"></script>-->
+	
+</head>
+<body>
+<div class='container'>
+	<header>
+		<h1>Turn Fat into FIT!</h1>
+		<nav id='stickynav'>
+			<div>
+				<img alt='logo' id='logo' src='images/logo/logo.png' />
+				<ul>
+					<li><a href='#products'>Products</a></li>
+					<li><a href='#contacts'>Contacts</a></li>
+					<li><a href='#about'>About us</a></li>
+				</ul>
+				<div class='cart'><a type='button'><span class='cart-total'></span> <img alt='shopping cart image' src='images/shopping_cart.png' /></a></div>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<!-- Slider -->
+		<section class="slideshow-container">
+			
+			
+			<!-- banners generated here -->
+
+			
+			<a class="prev" onclick="plusSlides(-1, event)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, event)">&#10095;</a>
+			<div id='dot-navigation'>
+			
+			
+				<!-- navigation dots generated here -->
+				
+				
+				
+			</div>
+		</section>
+		<!-- End Slider -->
+		<!-- Product Grid -->
+		<section id='products'>
+			<div id='filter-list'>
+				<ul>
+					<button class='toggle-filters' type='button'>hide</button>
+					<h4>Narrow down your search</h4>
+					
+					
+					
+					<!-- filter content generated here within filters.js file -->
+					
+					
+					
+				</ul>
+			</div>
+			<div id='product-grid'>
+				<ul>
+				
+				
+				
+					<!-- product grid content generated here within product-grid.js file -->
+					
+					
+					
+				</ul>
+			</div>
+		</section>		
+		<!-- End Product Grid -->
+		<!-- Contacts section -->
+		<section id="contacts">
+			<div>
+				<h3>Subscribe</h3>
+				<p>Get special offers, our newsletter with tips and trick, and VIP treatment.</p>
+				<form autocomplete="off" method="post" name="subscription-form" action="<!-- action script goes here -->">
+					<p><input type="email" name='subscription email' placeholder="Enter e-mail" required></p>
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+			
+			<div id='about'>
+				<h3>About</h3>
+				<p>Check out some useful resources.</p>
+				<ul class='link-list'>
+					<li><a href='#'>FAQ</a></li>
+					<li><a href='#'>Payment</a></li>
+					<li><a href='#'>Shipping</a></li>
+					<li><a href='#'>Gift Cards</a></li>
+					<li><a href='#'>Partners</a></li>
+					
+					<li><a href='#'>Privacy Statement</a></li>
+					<li><a href='#'>Terms of Use</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3>Contact Us</h3>
+				<p>Questions? Go ahead.</p>
+				<form autocomplete="off" method="post" name="contact-form" action="<!-- action script goes here -->">
+					<p><input type="text" placeholder="Name" name="Name" required></p>
+					<p><input type="email" placeholder="Email" name="Email" required></p>
+					<p><input type="text" placeholder="Subject" name="Subject" required></p>
+					<p><textarea rows=3 placeholder="Message" name="Message" required></textarea></p>
+					<button type="submit">Send</button>
+				</form>
+			</div>
+		</section>
+		<!-- End Contacts section -->
+		<!-- Product Modal -->
+		<div id='product-modal' class='modal'>
+			<div class='productView'>
+			
+			
+			
+				<!-- modal content generated here within product-grid.js file -->
+				
+				
+				
+			</div>
+			<a type='button' data-action='toggleDetails'>×</a>
+		</div>
+		<!-- End Product Modal -->
+		<!-- Cart Modal -->
+		<div id='cart-modal' class='modal'>
+			<div class='cartView'>
+				<section class='order-summary'>
+				
+				
+				
+					<!--modal content generated here within cart.js file-->
+					
+					
+					
+					
+				</section><section class='billing'>
+					<h3>You details</h3>
+					<div class='payment__method'>
+					   <div class="tab">
+						   <input type="radio" id="tab-1" name="tab-group" checked>
+						   <label for="tab-1">At Delivery</label>
+						   
+						   <div class="content">
+							   <form autocomplete="off" method="post" name="shipping-form" action="<!-- action script goes here -->">
+									<p><input type="text" placeholder="Name" name="Name" required></p>
+									<p><textarea rows=3 placeholder="Address" name="Address" required></textarea></p>
+									<p><input type="email" placeholder="Email (for order confirmation)" name="Email" required></p>
+									<p><input type="tel" placeholder="Phone (for order confirmation)" name="Phone" required></p>
+									<p><textarea rows=3 placeholder="Any comments" name="Comments" required></textarea></p>
+									<input type="hidden" name="Order" required/>
+									<button type="submit">Send</button>
+								</form>
+						   </div> 
+					   </div>
+					   <div class="tab">
+						   <input type="radio" id="tab-2" name="tab-group">
+						   <label for="tab-2">Via Direct Payment</label>
+						   
+						   <div class="content">
+								<p>Thank you for considering to pre-pay your order.</p>
+								<!--<div id='paypal-button-container'></div>-->
+						   </div> 
+					   </div>							
+					</div>
+				</section>
+			</div>
+			<a type='button' data-action='toggleCart'>×</a>
+		</div>
+		<!-- End Cart Modal -->
+		<!-- Status Modal -->
+		<div id='status-modal'>
+			<!--modal content generated here within cart.js file-->
+		</div>
+		<!-- End Status Modal -->
+	</main>
+	
+	<footer>
+		<p>© 2017 Online Store Demo</p>
+	</footer>
+</div>	
+	<script src='js/helpers/ResizeListener.js' type='application/javascript'></script>
+	<script src='js/helpers/smooth-scrolling.js' type='application/javascript'></script>
+	<script src='js/data/data.js' type='application/javascript'></script>
+	
+	<script src='js/banners.js' type='application/javascript'></script>
+	<script src='js/carousel.js' type='application/javascript'></script>
+	<script src='js/sticky.js' type='application/javascript'></script>
+	<script src='js/filters.js' type='application/javascript'></script>
+	<script src='js/product-grid.js' type='application/javascript'></script>
+	<script src='js/cart.js' type='application/javascript'></script>
+	<script src='js/forms.js' type='application/javascript'></script>
+</body>
+</html>
