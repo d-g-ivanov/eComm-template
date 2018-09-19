@@ -591,7 +591,7 @@ header a:hover {
 }
 
 .item__price:after {
-	content: ' lv\A(without delivery)';
+	content: ' \A(without delivery)';
 	white-space: pre;
 	display: inline;
 	font-size: 0.8em;
@@ -834,7 +834,7 @@ footer {
 }
 
 #product-modal .product-details .product-price:after {
-	content: ' lv (without delivery)';
+	content: ' (without delivery)';
 	white-space: pre;
 	display: inline;
 	font-size: 0.8em;
@@ -1007,13 +1007,6 @@ footer {
 	text-align: right;
 }
 
-#cart-modal .total-breakdown li span:last-of-type:after {
-	content: ' lv';
-}
-
-
-
-
 #cart-modal .cart-contents li:first-child {
 	border-top: 1px solid #ddd;
 }
@@ -1046,10 +1039,6 @@ footer {
 
 #cart-modal .product__details  div {
 	color: #aaa;
-}
-
-#cart-modal .product__details  div:not(.quantity__correction):after {
-	content: ' lv';
 }
 
 #cart-modal .quantity__correction {
