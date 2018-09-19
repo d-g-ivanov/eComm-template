@@ -3,7 +3,7 @@
 ***********/
 //add resize listener for product grid
 var prgrid = document.querySelector('#product-grid ul');
-
+var prgridcurrency = 'EUR' // update
 function productGridResizer() {
 	var width = prgrid.getBoundingClientRect().width;
 	if (width > 1300) {
@@ -40,7 +40,7 @@ function createGridItem(data) {
 	content += '<div class="hr-line"></div>';
 	content += '<span class="item__type">' + data.type + '</span>';
 	content += '<span class="item__title">' + data.title + '</span>';
-	content += '<span class="item__price">' + data.price.toFixed(2) + '</span>';
+	content += '<span class="item__price">' + data.price.toFixed(2) + ' ' + prgridcurrency + '</span>';
 	content += '<div class="buttons">';
 	content += '<button type="button" data-action="toggleDetails">Details</button> ';
 	content += '<button type="button" data-action="triggerCartUpdate">Add to cart</button>';
@@ -77,7 +77,7 @@ function createProductModal(data) {
 	modal += "</section>";
 	modal += "<section class='product-details'>";
 	modal += "<h3>" + data.title + "</h3>";
-	modal += "<div class='product-price'>" + data.price.toFixed(2) + "</div>";
+	modal += "<div class='product-price'>" + data.price.toFixed(2) + ' ' + prgridcurrency + "</div>";
 	
 	if (data.specs) {
 		modal += "<dl>";
