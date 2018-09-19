@@ -46,7 +46,7 @@ The idea to add the currency into the data.js construct just occurred to me. Mig
 #### Some ideas on the above
 Anyhow, product grid currency can be easily made accessible via the data.js file. Just add the new key to each item (as per your own discretion), and then update in ```html product-grid.js``` update the ```html prgridcurrency``` variable occurrences to that new key.
 
-For the Cart file, you can update the ```html addItem``` function to include the currency in within the Cart items. In ```html createCartModal function replace myCart.currency``` with the items currency information. For the subtotal you will still need a single currency though, so you are on your own on that.
+For the Cart file, you can update the ```html addItem``` function to include the currency in within the Cart items. In ```html createCartModal``` function replace ```html myCart.currency``` with the items currency information. For the subtotal you will still need a single currency though, so you are on your own on that.
 
 
 ## Compatibility
