@@ -17,7 +17,8 @@ var myCart = {
 	total: 0,
 	shipping: 0,
 	tax: 0,
-	items: {}
+	items: {},
+	currency: 'lv' //update
 };
 
 function updateCartData(itemNumber, quantity) {
@@ -67,7 +68,7 @@ function updateCartTotalData() {
 }
 
 function updateCartIcon() {
-	document.querySelector('.cart-total').textContent = (Math.round(myCart.total * 100) / 100).toFixed(2) + ' lv';
+	document.querySelector('.cart-total').textContent = (Math.round(myCart.total * 100) / 100).toFixed(2) + ' ' + myCart.currency;
 }
 
 function updateCartSummaryTable(data) {
